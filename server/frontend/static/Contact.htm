@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Dealerships</title>
+  <!-- Bootstrap CSS for responsive layout, grids, forms, and cards -->
+  <link href="https://jsdelivr.net" rel="stylesheet">
+  <!-- Local Static CSS Link -->
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div>
+  <!-- Navigation Bar (Contact Us marked as Active) -->
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: darkturquoise; height: 1in;">
+    <div class="container-fluid">
+      <h2 style="padding-right: 5%;">Dealerships</h2>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: larger;" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: larger;" href="/about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" style="font-size: larger;" aria-current="page" href="/contact">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Main Contact Us Container -->
+  <div class="card" style="width: 80%; margin: auto; margin-top: 5%; padding: 30px;">
+    <div class="banner text-center mb-5" name="contact-header">
+      <h1>Contact Us</h1>
+      <p class="lead">Have questions? We're here to help you get behind the wheel.</p>
+    </div>
+
+    <div class="row align-items-center">
+      <!-- Contact Information & Location Image -->
+      <div class="col-md-6 mb-4 mb-md-0">
+        <div class="card p-3 mb-4 shadow-sm">
+          <img class="img-fluid rounded mb-3" src="/static/dealership_building.png" alt="Our Dealership Showroom" style="max-height: 250px; object-fit: cover;">
+          <div class="card-body">
+            <h4 class="card-title fw-bold">Our Headquarters</h4>
+            <p class="card-text mt-3">
+              <strong>📍 Address:</strong> 123 Auto Mall Drive, Suite A, Detroit, MI 48201
+            </p>
+            <p class="card-text">
+              <strong>📞 Phone Support:</strong> +1 (555) 019-2834
+            </p>
+            <p class="card-text">
+              <strong>✉️ Email Address:</strong> <a href="mailto:support@dealerships.com">support@dealerships.com</a>
+            </p>
+            <p class="card-text">
+              <strong>🕒 Business Hours:</strong> Mon - Sat: 9:00 AM - 7:00 PM | Sun: Closed
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Customer Inquiry Form -->
+      <div class="col-md-6">
+        <div class="card p-4 shadow-sm">
+          <h4 class="fw-bold mb-4">Send Us a Message</h4>
+          <form action="/submit-contact" method="POST">
+            <div class="mb-3">
+              <label for="fullName" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="fullName" placeholder="John Doe" required>
+            </div>
+            <div class="mb-3">
+              <label for="emailAddress" class="form-label">Email Address</label>
+              <input type="email" class="form-control" id="emailAddress" placeholder="name@example.com" required>
+            </div>
+            <div class="mb-3">
+              <label for="subject" class="form-label">Subject</label>
+              <input type="text" class="form-control" id="subject" placeholder="Inquiry about financing, test drives, etc." required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="4" placeholder="Type your message here..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-dark w-100" style="background-color: darkturquoise; border: none; color: black; font-weight: bold;">Submit Inquiry</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Bootstrap JS Bundle -->
+<script src="https://jsdelivr.net"></script>
+</body>
+</html>
