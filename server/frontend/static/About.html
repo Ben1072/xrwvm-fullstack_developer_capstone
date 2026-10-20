@@ -1,9 +1,19 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <!-- Link the style sheet here -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Dealerships</title>
+  <!-- Bootstrap CSS for layout, navbar, and card styling -->
+  <link href="https://jsdelivr.net" rel="stylesheet">
+  <!-- Local Static CSS Link -->
+  <link rel="stylesheet" href="/static/style.css">
 </head>
+<body>
+
 <div>
-  <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: darkturquoise; height: 1in;">
     <div class="container-fluid">
       <h2 style="padding-right: 5%;">Dealerships</h2>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,44 +35,54 @@
     </div>
   </nav>
   
-    <div class="card" style="width: 80%;margin: auto; margin-top:5%;">
-      <div class="banner" name="about-header">
-      <!-- Insert header information here -->
-      </div>
-      <div style="display: flex;flex-direction: row; margin:auto">
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
+  <!-- Main About Us Content Card -->
+  <div class="card" style="width: 80%; margin: auto; margin-top: 5%; padding: 20px;">
+    <div class="banner text-center mb-4" name="about-header">
+      <h1>About Our Dealership</h1>
+      <p class="lead">Meet the dedicated team committed to helping you find your perfect vehicle.</p>
+    </div>
+
+    <!-- Team Members Grid -->
+    <div style="display: flex; flex-direction: row; justify-content: space-around; gap: 20px; flex-wrap: wrap; margin: auto; width: 100%;">
+      
+      <!-- Team Member 1 -->
+      <div class="card" style="width: 30%; min-width: 250px;">
+        <img class="card-img-top" src="/static/john_doe.png" alt="John Doe - Managing Director" style="height: 250px; object-fit: cover;">
         <div class="card-body">
-          <p class="title">Person1</p>
-          <p>Person1 Title</p>
-          <p class="card-text">Some text that explains the person1 in about 2 short sentences</p>
-          <p>person1@example.com</p>
+          <h5 class="title fw-bold">John Doe</h5>
+          <p class="text-muted font-italic">Managing Director</p>
+          <p class="card-text">John has over 15 years of experience in the automotive industry. He oversees our daily operations and ensures excellent customer satisfaction.</p>
+          <p><a href="mailto:johndoe@example.com">johndoe@example.com</a></p>
         </div>
       </div>
 
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
+      <!-- Team Member 2 -->
+      <div class="card" style="width: 30%; min-width: 250px;">
+        <img class="card-img-top" src="/static/jane_smith.png" alt="Jane Smith - Sales Manager" style="height: 250px; object-fit: cover;">
         <div class="card-body">
-          <p class="title">Person2</p>
-          <p>Person2 Title</p>
-          <p class="card-text">Some text that explains the person2 in about 2 short sentences</p>
-          <p>person2@example.com</p>
+          <h5 class="title fw-bold">Jane Smith</h5>
+          <p class="text-muted font-italic">Sales Manager</p>
+          <p class="card-text">Jane specializes in helping clients find vehicles that perfectly match their budgets. She leads our expert showroom consulting team.</p>
+          <p><a href="mailto:janesmith@example.com">janesmith@example.com</a></p>
         </div>
       </div>
 
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
+      <!-- Team Member 3 -->
+      <div class="card" style="width: 30%; min-width: 250px;">
+        <img class="card-img-top" src="/static/alex_jones.png" alt="Alex Jones - Lead Mechanic" style="height: 250px; object-fit: cover;">
         <div class="card-body">
-          <p class="title">Person3</p>
-          <p>Person3 Title</p>
-          <p class="card-text">Some text that explains the person3 in about 2 short sentences</p>
-          <p>person3@example.com</p>
+          <h5 class="title fw-bold">Alex Jones</h5>
+          <p class="text-muted font-italic">Lead Mechanic</p>
+          <p class="card-text">Alex runs our state-of-the-art service center clinic. He ensures every vehicle passes rigorous safety inspections before sale.</p>
+          <p><a href="mailto:alexjones@example.com">alexjones@example.com</a></p>
         </div>
       </div>
+
     </div>
-    </div>
-    </div>
-    
+  </div>
 </div>
 
+<!-- Bootstrap JS Bundle -->
+<script src="https://jsdelivr.net"></script>
+</body>
 </html>
